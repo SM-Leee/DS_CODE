@@ -9,6 +9,7 @@ const accordion = () => {
         select[i] = ($(accordion[i]).data('select') == true) ? i : ''
         disabled[i] = ($(accordion[i]).data('disabled') == true) ? i : ''
         contents_text = $('.accordion-text').children('p');
+        
     }
     for (var i = 0; i < accordion.length; i++) {
         $(accordion[i]).click(function () {
