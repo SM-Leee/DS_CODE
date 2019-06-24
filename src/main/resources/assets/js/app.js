@@ -419,7 +419,6 @@ const filterMapping = (target) => {
 const legendPick = () => {
 	const legendItems = $('.radarlegend')
 	$(legendItems).click(function () {
-		console.log($(this).parent().parent()[0].id);
 		let myId = $(this).parent().parent()[0].id;
 		let no = $(this).data('no');
 		if ($(this).css('backgroundColor') === 'rgb(195, 195, 195)') {
@@ -474,7 +473,6 @@ ds.ui.cardlist = function (cardlist_class, options) {
 			cardlist_icons += ' ';
 		}
 	}
-	console.log(options.dsColor)
 	$target.data('ds-mapping', options.dataSource);
 	$target.data('ds-color', options.dsColor);
 	$target.data('ds-category', options.option.dsCategory);
@@ -776,21 +774,15 @@ const buttonClick = function(){
 			location.href='byperiod';
 		}
 
-		/* datepicker data */
-		console.log($('.ds-ui-datepicker-box input').val());
 		/* dropdown data */
-		console.log($('.dropdown-picker').val())
 		$('.ds-ui-input input').each(function(){
 			if($(this).closest("div").hasClass("kwdnumber")===true){
 				/* input kwdnumber가 존재하는경우 , 삭제 된 상태 */
-				console.log($(this).val().replace(/\D/g, ""));
 			} else{
 				/* input data */
-				console.log($(this).val());
 			}
 		});
 		/* textarea data (Big input 창) */
-		console.log($('.ds-ui-input textarea').val());
 	});
 }
 //piechart event
@@ -1676,6 +1668,7 @@ ds.ui.chart = function(id, options) {
 	$target.data('ds-calc-detail', options.option.dsCalcDetail);
 	$target.data('ds-x', options.option.dsX);
 	$target.data('ds-substandard', options.option.dsSubstandard);
+	$target.data('ds-tableOption', options.option.dsTableOption);
 	
 	//suboption
 	$target.data('ds-transfer-naming', options.subOption.dsTransferNaming);

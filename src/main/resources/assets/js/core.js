@@ -49,7 +49,7 @@ function component(){
 	staticBtnSetting();
 	
 	toggleButton(); 
-	messageBox();
+	/*messageBox();*/
 	/* 원형 차트 */
 	/* 기본적인 형태는 갖춰졌지만 UI적인 수정이 필요함 */
 	$('.circle').each(function(){

@@ -135,7 +135,7 @@ ds_msgbox.error = (msg) => {
     return ds_msgbox;
 }
 
-function messageBox() {
+/*function messageBox() {
 
     //alert
     $('#btn-basic').on('click', (e)=>{
@@ -188,4 +188,4 @@ function messageBox() {
             alert('done');
         });
     });
-}
+}*/
