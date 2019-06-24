@@ -44,8 +44,8 @@ let lineChart = (dataSet, select, title) => {
 		}
 	} else {
 		try{
-			for(let i=0; i < eval('tableOption').length; i++){
-				$.each(eval('tableOption')[i], function(key, value){
+			for(let i=0; i < ($(select).data('ds-tableOption')).length; i++){
+				$.each(($(select).data('ds-tableOption'))[i], function(key, value){
 					if(key == $(select).data('ds-calc-detail')){
 						titlecalcdetail = value;
 					}

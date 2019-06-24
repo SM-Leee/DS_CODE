@@ -107,7 +107,7 @@ ds_msgbox.no = (fn) => {
 ds_msgbox.error = (msg) => {
     $(ds_msgbox.html).appendTo('body');
 
-    let msg_img = 'http://106.10.41.222:8080/ds_code/image/images/icon-error.png';
+    let msg_img = 'http://106.10.41.222:8080/ds_code/image/icon-error.png';
     
     $('.messageBox .message-img').attr('src', msg_img);
 
